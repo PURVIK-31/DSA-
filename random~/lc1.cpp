@@ -48,6 +48,8 @@ Constraints:
 2 <= nums[i] <= 1000
 nums[i] is a prime number.
 */
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     vector<int> minBitwiseArray(vector<int>& nums) {
