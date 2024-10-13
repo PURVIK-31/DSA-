@@ -78,8 +78,8 @@ from typing import List
 
 class Solution:
     def maxRemovals(self, source: str, pattern: str, targetIndices: List[int]) -> int:
-        n = len(source)
         m = len(pattern)
+        n = len(source)
         dp = [float('inf')] * (m + 1)
         dp[0] = 0
         isTarget = [False] * n
@@ -92,3 +92,6 @@ class Solution:
                     dp[j] = min(dp[j], dp[j-1] + (1 if isTarget[i] else 0))
         
         return len(targetIndices) - (0 if dp[m] == float('inf') else dp[m])
+
+        #hi there sir i am luphorine
+
